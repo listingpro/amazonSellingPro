@@ -1,136 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmazonSelling.PRO - Smart PPC Solutions for FBA Entrepreneurs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght @400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Amazon Selling Pro | Expert PPC & Listing Optimization Agency</title>
+    <meta name="description" content="Scale your Amazon business with data-driven PPC management and listing optimization. We turn ad spend into profit for 6-8 figure sellers.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Web3Forms Capture Script-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #e2e8f0; /* Slate 200 */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            border-color: rgba(96, 165, 250, 0.3);
+        }
+        /* Grayscale to Color transition for logos */
+        .client-logo {
+            filter: grayscale(100%) opacity(0.6);
+            transition: all 0.3s ease;
+        }
+        .client-logo:hover {
+            filter: grayscale(0%) opacity(1);
+        }
+    </style>
 </head>
-<body>
-    <div class="main-wrapper">
-        <header class="hero-section">
-            <div class="hero-section__content">
-                <img src='images/Website-logo-Dark.png' alt="AmazonSelling.PRO Logo" class="main-logo">
-                <h1>A smart PPC solution for smart entrepreneurs</h1>
-                <p>You're a busy FBA entrepreneur and PPC is paramount to success in the Amazon Marketplace. You have a business to run, customers to contact, suppliers to call, logistics to handle and learning the necessary skills to manage paid advertising isn't in your wheelhouse.</p>
-                <a href="#contact" class="button">Free Consultation</a>
-            </div>
-            <div class="hero-section__bg-elements">
-                <div class="bg-element bg-element--1"></div>
-                <div class="bg-element bg-element--2"></div>
-                <div class="bg-element bg-element--3"></div>
-                <div class="bg-element bg-element--4"></div>
-                <div class="bg-element bg-element--5"></div>
-                <div class="bg-element bg-element--6"></div>
-            </div>
-        </header>
+<body class="antialiased">
 
-        <section class="about-section">
-            <h2>WE ARE AMAZON SELLING PRO</h2>
-            <h3>A GROWTH AGENCY FOR SMART AMAZON FBA SELLERS.</h3>
-            <p>You're busy managing your business, contacting suppliers, handling customer requests, dealing with shipping logistics and researching new products. Let an experienced digital agency create a strategy to grow your Amazon FBA business. We'll manage your keyword research, create product listings that sell, create and manage your Amazon PPC ads and campaigns and continually review analytics to increase conversions.</p>
-            <!--<a href="#contact" class="button button--secondary">More About Us</a>-->
-        </section>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- LOGO SECTION -->
+                <div class="flex-shrink-0 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img src='images/Website-logo-Dark.png' 
+                         alt="Amazon Selling Pro Logo" 
+                         class="h-10 w-auto"> 
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#services" class="hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#process" class="hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Our Process</a>
+                        <a href="#results" class="hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Results</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-blue-900/20">
+                            Get Free Audit
+                        </a>
+                    </div>
+                </div>
 
-        <section class="services-section">
-            <h2>OUR SERVICES</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <h3><i class="fas fa-pencil-ruler"></i> DESIGN</h3>
-                    <p>Let us ensure that your using proper ad copy and the top searched keywords in your Amazon listings and ensure you have proper product photos</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-lightbulb"></i> STRATEGY</h3>
-                    <p>Whether you're launching a new product or have an established product, let us create a marketing strategy to bring your product to the top of search results</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-chart-bar"></i> ANALYTICS</h3>
-                    <p>Develop proper A/B testing procedures to ensure proper pricing, titles, descriptions & photos are utilized in order to maximize conversions</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-bullhorn"></i> PPC MARKETING</h3>
-                    <p>Design and create Amazon PPC campaigns using high search volume & high converting product keywords. Maintain targeted ACoS goals to ensure profitabilty</p>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="case-studies-section">
-            <h2>CASE STUDIES</h2>
-            <p>Multi-year Client Success</p>
-            <div class="case-study-image">
-                <img src="images/SalesResults.png" alt="Sales Results">
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-slate-800 border-b border-slate-700" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="hover:bg-slate-700 text-white block px-3 py-2 rounded-md text-base font-medium" onclick="toggleMenu()">Services</a>
+                <a href="#process" class="hover:bg-slate-700 text-white block px-3 py-2 rounded-md text-base font-medium" onclick="toggleMenu()">Our Process</a>
+                <a href="#results" class="hover:bg-slate-700 text-white block px-3 py-2 rounded-md text-base font-medium" onclick="toggleMenu()">Results</a>
+                <a href="#contact" class="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-4 text-center" onclick="toggleMenu()">Get Free Audit</a>
             </div>
-            <!--<a href="#" class="button button--secondary">All Case Studies</a>-->
-        </section>
-    </div>
+        </div>
+    </nav>
 
-    <section class="clients-section">
-        <div class="main-wrapper">
-            <h2>COMPANIES WE'VE WORKED WITH</h2>
-            <div class="client-logos">
-                <img src="images/Company-Boulder-tools-Logo.png" alt="Client Logo 1">
-                <img src="images/Company-teadrops-logo.png" alt="Client Logo 2">
-                <img src="images/Company-tuffpupperLogo.png" alt="Client Logo 3">
-                <img src="images/Company-writing-yourlife-logo2.png" alt="Client Logo 4">
-                <img src="images/Company-Yoro-Logo.png" alt="Client Logo 5">
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-6 lg:pt-48 lg:pb-10 overflow-hidden">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-slate-800 border border-slate-700 mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
+                <span class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Accepting New Clients for <script>document.write(new Date().getFullYear())</script></span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Stop Guessing.<br>
+                Start <span class="text-gradient">Dominating Amazon.</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400 mb-10">
+                We are the data-driven PPC agency that helps 6, 7, and 8-figure sellers lower ACOS, increase TACOS efficiency, and scale profit.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 text-lg font-bold rounded-full text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2">
+                    Request Account Audit <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
             </div>
 
+            <!-- CLIENT LOGOS SECTION -->
+            <div class="mt-16 pt-8 border-t border-slate-800/50">
+                <p class="text-sm text-slate-500 mb-8 font-medium uppercase tracking-wider">Trusted by top sellers</p>
 
+                <!-- 
+                     Logo Container: Use flex and nowrap on desktop. No horizontal justify needed as the 5 containers will fill the space.
+                -->
+                <div class="flex flex-wrap md:flex-nowrap justify-center items-center w-full px-4">
+                    
+                    <!-- 
+                         Individual Logo Container Structure:
+                         - w-1/2 on mobile (2 logos per row)
+                         - md:w-1/5 on desktop (5 logos per row, 20% width each)
+                         - h-24 ensures a uniform height for all logo slots
+                         - flex/justify/items center the image inside its container
+                    -->
+                    <div class="w-1/2 md:w-1/5 h-24 flex justify-center items-center p-2">
+                        <img src="images/Company-Boulder-tools-Logo.png" alt="Client Logo" 
+                             class="client-logo max-h-20 w-auto object-contain">
+                    </div>
+                    
+                    <div class="w-1/2 md:w-1/5 h-24 flex justify-center items-center p-2">
+                        <img src="images/Company-teadrops-logo.png" alt="Client Logo" 
+                             class="client-logo max-h-20 w-auto object-contain">
+                    </div>
+                    
+                    <div class="w-1/2 md:w-1/5 h-24 flex justify-center items-center p-2">
+                        <img src="images/Company-tuffpupperLogo.png" alt="Client Logo" 
+                             class="client-logo max-h-20 w-auto object-contain">
+                    </div>
+                    
+                    <div class="w-1/2 md:w-1/5 h-24 flex justify-center items-center p-2">
+                        <img src="images/Company-writing-yourlife-logo2.png" alt="Client Logo" 
+                             class="client-logo max-h-20 w-auto object-contain">
+                    </div>
+                    
+                    <div class="w-1/2 md:w-1/5 h-24 flex justify-center items-center p-2">
+                        <img src="images/Company-Yoro-Logo.png" alt="Client Logo" 
+                             class="client-logo max-h-20 w-auto object-contain">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="main-wrapper">
-        <section id="contact" class="contact-section">
-            <h2>GET IN TOUCH</h2>
-            <p>Start your project today!</p>
-            <form class="contact-form" name="survey-form" accept-charset="utf-8"
-                action="https://formspree.io/f/xleygaqy" method="post">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="true">
+    <!-- Results Section (NEW) -->
+    <section id="results" class="py-20 bg-slate-800 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Column 1: Sales Results -->
+                <div class="flex flex-col h-full">
+                    <h3 class="text-2xl font-bold text-white mb-6 pl-2 border-l-4 border-blue-500">Sales Results</h3>
+                    <div class="glass-card p-8 rounded-2xl flex-grow flex flex-col justify-center space-y-6">
+                        <!-- Stat 1 -->
+                        <div class="flex items-center justify-between border-b border-slate-700 pb-4">
+                            <div>
+                                <p class="text-slate-400 text-sm font-medium">Average Revenue Increase</p>
+                                <p class="text-3xl font-bold text-white mt-1">145%</p>
+                            </div>
+                            <div class="text-green-400 bg-green-400/10 px-3 py-1 rounded-full text-xs font-bold">
+                                <i class="fa-solid fa-arrow-up"></i> YoY
+                            </div>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div class="flex items-center justify-between border-b border-slate-700 pb-4">
+                            <div>
+                                <p class="text-slate-400 text-sm font-medium">ACOS Reduction</p>
+                                <p class="text-3xl font-bold text-white mt-1">-32%</p>
+                            </div>
+                            <div class="text-green-400 bg-green-400/10 px-3 py-1 rounded-full text-xs font-bold">
+                                <i class="fa-solid fa-arrow-down"></i> Avg
+                            </div>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-slate-400 text-sm font-medium">Total Ad Spend Managed</p>
+                                <p class="text-3xl font-bold text-white mt-1">$50M+</p>
+                            </div>
+                            <div class="text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full text-xs font-bold">
+                                <i class="fa-solid fa-check"></i> Verified
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email-address">Email Address</label>
-                    <input type="email" name="_replyto" id="email-address"
-                        placeholder="email@domain.com" required="">
-                </div>
-                <div class="form-group">
-                    <label for="Service Needed">1. Services Required</label>
-                    <select name="Service Needed" id="Service Needed" required="">
-                        <option value="" selected="" disabled="">Choose</option>
-                        <option value="PPC Optimization">PPC Optimization/Management</option>
-                        <option value="Listing Optimization">Listing Optimization</option>
-                        <option value="Other Questions">Other Questions</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="Ad Spend">2. What is your monthly ad spend?</label>
-                    <select name="Ad Spend" id="Ad Spend" required="">
-                        <option value="" selected="" disabled="">Choose</option>
-                        <option value="$0-$1000">$0-$1000</option>
-                        <option value="$1001-$5000">$1001-$5000</option>
-                        <option value="$5001-$10,000">$5001-$10,000</option>
-                        <option value="$10,000-$20,000">$10,001-$20,000+</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Additional Comments</label>
-                    <textarea rows="3" name="message" id="message"
-                        placeholder="Let us know anything else you think might be important"></textarea>
-                </div>
-                <input type="hidden" name="_subject" id="email-subject"
-                value="Survey Responses">
-                <div class="form-group form-submit-group">
-                    <button type="submit" class="button">Submit Contact Form</button>
-                </div>
-            </form>
-        </section>
 
-        <footer>
-            <p>&copy; 2025 AmazonSelling.pro All rights reserved.</p>
-        </footer>
-    </div>
+                <!-- Column 2: Testimonials -->
+                <div class="flex flex-col h-full">
+                    <h3 class="text-2xl font-bold text-white mb-6 pl-2 border-l-4 border-purple-500">Testimonials</h3>
+                    <div class="glass-card p-8 rounded-2xl flex-grow relative overflow-hidden">
+                         <div class="absolute top-0 right-0 p-8 opacity-10">
+                            <i class="fa-solid fa-quote-right text-8xl text-purple-500"></i>
+                         </div>
+                         <div class="relative z-10 flex flex-col justify-between h-full">
+                            <div>
+                                <div class="flex text-yellow-400 mb-4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-300 text-lg italic leading-relaxed mb-6">
+                                    "We were stuck at $50k/month for over a year. Within 90 days of working with Amazon Selling Pro, we hit $120k while actually spending *less* on ads. Their data-driven approach is unlike anything we've seen."
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center text-xl font-bold text-white">
+                                    CP
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold">Chad Perry</p>
+                                    <p class="text-blue-400 text-sm">CEO, TuffPupper</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Comprehensive Amazon Growth</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">We don't just "manage ads." We optimize your entire funnel for maximum conversion and profitability.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 border border-blue-500/20 text-blue-400">
+                        <i class="fa-solid fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">PPC Management</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Granular campaign structures (Sponsored Products, Brands, & Display). We use proprietary scripts and human oversight to cut wasted spend and scale winners.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-purple-900/30 rounded-xl flex items-center justify-center mb-6 border border-purple-500/20 text-purple-400">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Listing Optimization</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Traffic is useless if it doesn't convert. We overhaul your SEO titles, bullets, and A+ content to maximize session percentage and indexing.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-pink-900/30 rounded-xl flex items-center justify-center mb-6 border border-pink-500/20 text-pink-400">
+                        <i class="fa-solid fa-video text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Video Ads & Creative</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Dominate search results with Sponsored Brands Video. We script, edit, and launch high-converting video assets designed to stop the scroll and drive sales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-slate-800 border-y border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <!-- MARKETING IMAGE PLACEHOLDER -->
+                 <div class="relative rounded-2xl overflow-hidden border border-slate-600 shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/20 mix-blend-overlay z-10"></div>
+                    <img src="images/laptop.jpg" alt="Analytics Dashboard" class="w-full h-full object-cover opacity-90">
+                 </div>
+            </div>
+            <div class="lg:w-1/2 space-y-6">
+                <h2 class="text-3xl font-bold text-white">We treat your budget like our own.</h2>
+                <p class="text-lg text-slate-400">
+                    Most agencies "set it and forget it." At Amazon Selling Pro, we are proactive. We understand that Amazon is a cash-flow business.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm">1</span>
+                        <div><h4 class="text-white font-bold">Audit & Analysis</h4><p class="text-slate-400 text-sm">Deep dive into search term reports to find wasted spend.</p></div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm">2</span>
+                        <div><h4 class="text-white font-bold">Restructure</h4><p class="text-slate-400 text-sm">Organize campaigns for scalability and separation.</p></div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm">3</span>
+                        <div><h4 class="text-white font-bold">Scale</h4><p class="text-slate-400 text-sm">Aggressively push top-performing keywords to capture the Buy Box.</p></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-3xl p-8 md:p-12 border border-slate-700 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-white mb-4">Ready to Scale?</h2>
+                    <p class="text-slate-400">Get a free, no-obligation audit of your Amazon PPC account.</p>
+                </div>
+
+    <!-- Web3Forms -->
+    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" id="auditForm">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input type="hidden" name="access_key" value="9f036d97-491a-4688-a48c-14e8568f5dc4">
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Full Name</label>
+                <input type="text" name="name" required 
+                    class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Work Email</label>
+                <input type="email" name="email" required 
+                    class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Amazon Storefront / ASIN</label>
+                <input type="text" name="website" 
+                    class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-slate-300 mb-2">Monthly Revenue</label>
+                <select name="revenue" class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                    <option value="Just Starting">Just Starting (< $5k/mo)</option>
+                    <option value="5k-25k">$5k - $25k / mo</option>
+                    <option value="25k-100k">$25k - $100k / mo</option>
+                    <option value="100k+">$100k+ / mo</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2">Message / Pain Points</label>
+            <textarea name="message" rows="4" 
+                class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"></textarea>
+        </div>
+
+        <!-- CAPTCHA SECTION -->
+        <div class="flex justify-center py-4">
+            <div class="bg-slate-800 border border-slate-600 p-4 rounded text-slate-400 text-sm">
+                <!-- PASTE YOUR CAPTCHA CODE HERE -->
+                <div class="h-captcha" data-captcha="true"></div>
+            </div>
+        </div>
+        
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold py-4 rounded-lg shadow-lg transform transition hover:-translate-y-1 text-lg">
+            Request Free Audit
+        </button>
+    </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <!-- Footer Logo Placeholder -->
+                <img src='images/Website-logo-Dark.png' alt="Logo" class="h-6 w-auto opacity-50">
+            </div>
+            <p class="text-slate-500 text-sm">&copy; <script>document.write(new Date().getFullYear())</script> AmazonSelling.Pro All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
